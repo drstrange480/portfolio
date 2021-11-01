@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <link rel="stylesheet" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--overlay animation-->
+    <div class="overlay__first"></div>
+    <div class="overlay__second"></div>
+    <div class="overlay__third"></div>
+
+    <header class="1-header">
+
+    </header>
+
+    <main class="1-main__bd-grid">
+
+    </main>
+
+      <!--nav section-->
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="#home" id="navbar__logo"></a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#home" class="navbar__links" id="home-page">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__links" id="about-page">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#work" class="navbar__links" id="work-page"
+                >work</a
+              >
+            </li>
+            <li class="navbar__item">
+                <a href="#work" class="navbar__links" id="work-page"
+                  >Contact</a
+                >
+              </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <!--main section-->
+      <div class="main" id="about">
+        <div class="main__container">
+          <div class="main__container--about">
+            <h2>HELLO I'M</h2>
+            <div class="main__container--about2">
+              <h1 data-text="BAIJU">BAIJU</h1>
+              <p>UI/UX DEVOLOPER & GRAPHICS DESIGNER</p>          
+            </div>
+          </div>  
+          
+          <div class="main__container--img"><img src="By Your Side _ ✔ - Chapter 33_ Catching Up.jfif" alt="no img">
+          </div>
+      
+        </div>
+      </div>
+
+      
+      
+      <!--social_media_section-->
+      <section class="social">
+        <ul class="social__items">
+          <li data-text="instagram">
+            <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>        
+          <li data-text="google">
+            <a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i></a>
+          </li>        
+          <li data-text="tumblr">
+            <a href="#" class="tumblr"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+          </li>        
+          <li data-text="dribble">
+            <a href="#" class="dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </section>
+
+      <!--work__section-->
+
+      <div class="work" id="work">
+        <h1>My works</h1>
+        <div class="work__wrapper">
+          <div class="work__card" id="1">
+            <h2>UX/UX</h2>
+            <p>Portfolio,parallex,e-commerce...</p>
+            <div class="work__btn"><button>Get Started</button></div>
+          </div>
+          <div class="work__card">
+            <h2>GRAPHIC DESIGNER</h2>
+            <p>Logos,posters,brouchers...</p>
+            <div class="work__btn"><button>Get Started</button></div>
+          </div><div class="work__card">
+            <h2>VIDEO EDITOR</h2>
+            <p>Color grading,motoin graphics..</p>
+            <div class="work__btn"><button>Get Started</button></div>
+          </div><div class="work__card">
+            <h2>CONTENT CREATOR</h2>
+            <p>Types script,wikipedia...</p>
+            <div class="work__btn"><button>Get Started</button></div>
+          </div>
+        </div>
+      </div>
+      
+    
+    <script src="vanilla-tilt.js"></script>
+    <script>
+
+      const menu = document.querySelector('#mobile-menu');
+      const menuLinks = document.querySelector('.navbar__menu');
+
+      const mobileMenu = () =>{
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+
+      };
+
+      menu.addEventListener('click' , mobileMenu);
+
+      VanillaTilt.init(document.querySelectorAll(".social__items li a"), {
+		    max: 35,
+		    speed: 400,
+        glare: true,
+        "max-glare": 1,
+	    });
+    </script>
+
+    
+</body>
+</html>
